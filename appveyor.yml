@@ -11,4 +11,3 @@ test_script:
   - cmd: ECHO this is batch
   - ps: echo $(env_test)
   - ps: Write-Host "This is PowerShell"
-  - ps: Get-ChildItem env:
