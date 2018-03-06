@@ -9,6 +9,6 @@ build: off
 
 test_script:
   - cmd: ECHO this is batch
-  - ECHO {{env_test}}
+  - ps: echo $(env_test)
   - ps: Write-Host "This is PowerShell"
   - ps: Get-ChildItem env:
