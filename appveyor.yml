@@ -9,5 +9,6 @@ build: off
 
 test_script:
   - cmd: ECHO this is batch
-  - echo %env_test%
   - ps: Write-Host "This is PowerShell"
+  - echo %env_test%
+  - ps: echoi $env:env_test
