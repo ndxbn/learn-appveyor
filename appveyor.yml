@@ -1,0 +1,14 @@
+version: '0.0.{build}'
+# options
+skip_branch_with_pr: true
+
+install:
+  - cinst winrar
+
+build: off
+
+test_script:
+  - cmd: ECHO this is batch
+  - ps: Write-Host "This is PowerShell"
+  - echo %env_test%
+  - ps: echo $env:env_test
