@@ -3,7 +3,7 @@ version: '0.0.{build}'
 skip_branch_with_pr: true
 
 install:
-  - cinst php
+  - cinst winrar
 
 build: off
 
