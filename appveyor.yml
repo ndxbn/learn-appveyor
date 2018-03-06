@@ -1,0 +1,8 @@
+version: '0.0.{build}'
+install:
+  - cinst php
+test_script:
+  - cmd: ECHO this is batch
+  - ECHO {env_test}
+  - ps: Write-Host "This is PowerShell"
+  - cmd: php --version
