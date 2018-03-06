@@ -11,4 +11,4 @@ test_script:
   - cmd: ECHO this is batch
   - ps: Write-Host "This is PowerShell"
   - echo %env_test%
-  - ps: echoi $env:env_test
+  - ps: echo $env:env_test
