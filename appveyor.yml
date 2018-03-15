@@ -3,12 +3,11 @@ version: '0.0.{build}'
 skip_branch_with_pr: true
 
 install:
-  - cinst winrar
+  - cinst virtualbox vagrant
 
 build: off
 
 test_script:
-  - cmd: ECHO this is batch
-  - ps: Write-Host "This is PowerShell"
-  - echo %env_test%
-  - ps: echo $env:env_test
+  - vagrant init centos/7
+  - vagrant up
+  - vagrant status
